@@ -1,0 +1,10 @@
+%h1 Publications
+
+- if @publications.empty?
+  %p No publications yet
+- else
+  %ul
+    - @publications.each do |publication|
+      %li<
+        %h2= link_to publication.title, publication_path(publication.id)
+

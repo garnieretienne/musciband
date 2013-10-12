@@ -17,3 +17,6 @@
 
 # Ignore vendored gems
 /vendor/bundle
+
+# Ignore env file
+.env

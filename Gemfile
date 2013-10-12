@@ -1,7 +1,19 @@
 source 'https://rubygems.org'
 
+# Manage processes using foreman
+gem 'foreman'
+
+# Platforms
+gem 'soundcloud'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+
+# Use haml templates
+gem "haml-rails"
+
+# Support for markdown capabilities
+gem "redcarpet"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -43,3 +55,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Lora', serif;
+  max-width: 960px;
+  margin: auto;
+  padding: 2em;
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  article {
+    h1, h2, h3, h4, h5 {
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+
+form {
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 1em;
+
+    label {
+      display: none;
+    }
+
+    input[type=text], textarea {
+      width: 100%;
+      border: none;
+    }
+
+    textarea {
+      height: 300px;
+    }
+  }
+}
+}

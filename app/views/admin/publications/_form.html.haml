@@ -1,0 +1,10 @@
+.editor{contenteditable: true}
+  = form_for [:admin, @publication] do |f|
+    %fieldset
+      = f.label :title
+      = f.text_field :title, placeholder: "Title"
+    %fieldset
+      = f.label :content
+      = f.text_area :content, placeholder: "Content"
+    %fieldset
+      = f.submit "Save"
