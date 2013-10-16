@@ -11,11 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131011201836) do
+ActiveRecord::Schema.define(version: 20131012142732) do
 
   create_table "publications", force: true do |t|
     t.string   "title"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "track_attachments", force: true do |t|
+    t.integer  "publication_id"
+    t.integer  "track_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "track_attachments", ["publication_id"], name: "index_track_attachments_on_publication_id"
+  add_index "track_attachments", ["track_id"], name: "index_track_attachments_on_track_id"
+
+  create_table "tracks", force: true do |t|
+    t.string   "title"
+    t.integer  "duration"
+    t.text     "description"
+    t.string   "source"
+    t.integer  "internal_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

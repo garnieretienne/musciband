@@ -1,6 +1,7 @@
 Musicband::Application.routes.draw do
   
   resources :publications
+  resources :tracks
 
   namespace :admin do
     resources :publications

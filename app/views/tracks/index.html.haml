@@ -1,0 +1,5 @@
+%h1 Tracks
+
+%ul
+  - @tracks.each do |track|
+    %li= "#{timer track.duration} - #{track.title}"

@@ -14,6 +14,7 @@ class Admin::PublicationsController < ApplicationController
 
   def edit
     @publication = Publication.find params[:id]
+    @tracks = Track.all
   end
 
   def update

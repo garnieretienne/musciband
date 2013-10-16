@@ -26,26 +26,37 @@ body {
     }
   }
 
-form {
+  form {
 
-  fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    margin-bottom: 1em;
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      margin-bottom: 1em;
 
-    label {
-      display: none;
-    }
+      label {
+        display: none;
+      }
 
-    input[type=text], textarea {
-      width: 100%;
-      border: none;
-    }
+      input[type=text], textarea {
+        width: 100%;
+        border: none;
+      }
 
-    textarea {
-      height: 300px;
+      textarea {
+        height: 300px;
+      }
     }
   }
 }
+
+.left-panel {
+  display: block;
+  float: left;
+  width: 80%;
+}
+
+.right-panel {
+  width: 20%;
+  margin-left: 80%;
 }
