@@ -1,10 +1,17 @@
 Musicband::Application.routes.draw do
   
+  get "publications/update"
   resources :publications
   resources :tracks
 
   namespace :admin do
     resources :publications
+  end
+
+  namespace :api do
+    namespace :v1 do
+      resources :publications
+    end
   end
 
   root "publications#index"
