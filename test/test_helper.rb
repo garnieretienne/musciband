@@ -11,5 +11,8 @@ class ActiveSupport::TestCase
   # -- they do not yet inherit this setting
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  # Return a ruby data structre from the JSON string stored in the response body
+  def json
+  	JSON.parse(response.body)
+  end
 end
