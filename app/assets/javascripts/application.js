@@ -20,7 +20,9 @@
 //= require_self
 //= require editor
 
-// for more details see: http://emberjs.com/guides/application/
-Editor = Ember.Application.create();
+// For more details see: http://emberjs.com/guides/application/
+Editor = Ember.Application.create({
+	publicationId: 3
+});
 
 //= require_tree .

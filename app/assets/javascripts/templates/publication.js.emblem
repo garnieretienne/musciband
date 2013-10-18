@@ -1,0 +1,7 @@
+%form
+  %fieldset
+    = input placeholder="Your title" value=title
+  %fieldset
+    = textarea placeholder="Your article" value=content
+  %fieldset
+    %input{ action "savePublication" content } type="submit" value="Save"
