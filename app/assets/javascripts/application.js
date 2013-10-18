@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require medium
 //= require handlebars
 //= require ember
 //= require ember-data
@@ -24,5 +23,3 @@
 Editor = Ember.Application.create({
 	publicationId: 3
 });
-
-//= require_tree .
