@@ -14,16 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.autosize
-//= require handlebars
-//= require ember
-//= require ember-data
 //= require_self
-//= require editor
-
-// For more details see: http://emberjs.com/guides/application/
-Editor = Ember.Application.create({
-  publicationId: 3
-});
 
 // Auto-size textboxes
 $(document).ready(function(){
