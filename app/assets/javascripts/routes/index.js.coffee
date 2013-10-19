@@ -6,3 +6,4 @@ Editor.IndexRoute = Ember.Route.extend
   	publication_id = location.pathname.split('/')[3]
 
   	this.controllerFor('publication').set 'model', Editor.Publication.find publication_id
+  	this.controllerFor('tracks').set 'model', Editor.Track.find()

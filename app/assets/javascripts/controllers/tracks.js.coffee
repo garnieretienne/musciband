@@ -1,0 +1,1 @@
+Editor.TracksController = Ember.ArrayController.extend()
