@@ -1,7 +1,7 @@
 %form.publication
   %fieldset
-    = input placeholder="Your title" value=title name="title"
+    = input placeholder="Your title" value=title name="title" class="publication-title"
   %fieldset
-    = textarea placeholder="Your article" value=article name="markdown" class="markdown"
+    = textarea placeholder="Your article" value=article name="markdown" class="publication-article"
   %fieldset
     %input{ action "savePublication" content } type="submit" value="Save"

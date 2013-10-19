@@ -1,3 +1,15 @@
 // Place all the styles related to the admin/publications controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+form.publication {
+  input[type=text], textarea {
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+
+  textarea {
+    min-height: 10em;
+  }
+}

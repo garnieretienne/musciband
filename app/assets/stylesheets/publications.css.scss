@@ -2,28 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-form.publication {
-
-	fieldset {
-		width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    margin-bottom: 1em;
+.publication {
+  
+  .publication-article {
+    font-size: 1em;
   }
 
-  input[type=text], textarea {
-  	font-family: 'Source Sans Pro', sans-serif;
-  	width: 100%;
-  	border: 0;
-  }
-
-  input[name=title] {
-  	font-size: 2em;
-  }
-
-  textarea {
-  	font-size: 1.1em;
-  	min-height: 20em;
+  .publication-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.67em 0;
   }
 }
