@@ -9,6 +9,7 @@ class Api::V1::PublicationsController < ApplicationController
 
   def show
     @publication = Publication.find params[:id]
+    @tracks = @publication.tracks
     respond_with @publication
   end
 

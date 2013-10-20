@@ -1,15 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
-  duration: 1
-  description: MyText
-  source: MyString
-  internal_id: 1
-
-two:
-  title: MyString
-  duration: 1
-  description: MyText
-  source: MyString
-  internal_id: 1
+  title: My amazing song
+  duration: 60000
+  description: Amazing works I've done this winter
+  source: MusicProviders::DefaultProvider
+  internal_id: 1234567

@@ -6,10 +6,10 @@ class Api::V1::PublicationsControllerTest < ActionController::TestCase
   	publication = publications(:one)
   	xhr :get, :show, id: publication.id
   	assert_response 200
-  	assert_equal "My first publication", json['title']
+  	assert_equal "My first publication", json['publication']['title']
   end
   
-  test "should updatea publication" do
+  test "should update a publication" do
     publication = publications(:one)
     xhr :put, :update, id: publication.id, publication: {title: "New Title"}
     assert_response 204

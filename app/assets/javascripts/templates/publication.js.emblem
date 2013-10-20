@@ -5,3 +5,9 @@
     = textarea placeholder="Your article" value=article name="markdown" class="publication-article"
   %fieldset
     %input{ action "savePublication" content } type="submit" value="Save"
+
+%h2 Tracks Attachment
+
+%ul
+  each track in tracks
+    %li= track.title
