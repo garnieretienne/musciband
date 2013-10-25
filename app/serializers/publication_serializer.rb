@@ -3,5 +3,5 @@ class PublicationSerializer < ActiveModel::Serializer
   embed :ids, include: true
 
   attributes :title, :article
-  has_many :tracks
+  has_many :track_attachments
 end

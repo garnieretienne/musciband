@@ -2,4 +2,4 @@
 
 %ul.tracks
   each
-    li= title
+    %li click="attachToPublication this controller.currentPublication" = title

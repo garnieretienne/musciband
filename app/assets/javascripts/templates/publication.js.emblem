@@ -10,4 +10,4 @@
 
 %ul
   each track in tracks
-    %li= track.title
+    %li click="detachTrack this track" = track.title

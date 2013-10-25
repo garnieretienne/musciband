@@ -11,6 +11,7 @@ Musicband::Application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :publications
+      resources :track_attachments
       resources :tracks
     end
   end
